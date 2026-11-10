@@ -15,7 +15,7 @@ Trace to the real cause. Do not hide a problem. A nil-check that silences a cras
 
 ## Do
 
-To reach the app, read the local skill. Reproduce it yourself on the real surface. Won't fire? Force it: tighter trigger, more logs, synthetic input. Ask the user only after you drove as far as the surface allows, with a stated reason.
+The environment already starts the app. Reproduce it yourself on the real surface. Won't fire? Force it: tighter trigger, more logs, synthetic input. Ask the user only after you drove as far as the surface allows, with a stated reason.
 
 Form hypotheses. Each pass, cut the most remaining space. Read the program as it runs. When state is unclear, instrument. Don't guess. Confirm the surviving mechanism with runtime evidence before you design a fix. A plausible cause can be wrong while the real one sits one layer over.
 
@@ -25,4 +25,4 @@ Fix only what the evidence names. Cheap local test path: failing check first, th
 
 Verify on the same surface. The original repro now fails to happen. Inconclusive is not a pass. Unit tests show a branch, not bug absence. If the check looks green too easily, suspect the observation method before the system. Clean up instrumentation after.
 
-Cause not obvious: use the debug subagent. You stay lead. You do not ship a fix from its summary; you inspect the artifact.
+Cause not obvious: you stay lead. Do not ship a fix from a summary; inspect the running program.
