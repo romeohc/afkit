@@ -4,13 +4,13 @@
     "name": "romeohc"
   },
   "metadata": {
-    "description": "Turns your AI coding agents into a near-autonomous team that ships better code, faster."
+    "description": "Cursor plugin for the product chain, from a clear request to verified production."
   },
   "plugins": [
     {
       "name": "afkit",
       "source": ".",
-      "description": "Turns your AI coding agents into a near-autonomous team that ships better code, faster."
+      "description": "Cursor plugin for the product chain, from a clear request to verified production."
     }
   ]
 }
