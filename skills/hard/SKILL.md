@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Hard
 
-Implement what they asked. To reach the app, read the local skill. Verify it yourself on the real app. Prove it with screens and a short video. If you hit a bug and don't know why: use the debug skill. Always use the local skill to test the app, then prove it.
+Implement what they asked. The environment already starts the app. Verify it yourself on the real app. Prove it with screens and a short video. If you hit a bug and don't know why: use the debug skill.
 
 ## Engineer
 

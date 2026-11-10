@@ -1,12 +1,12 @@
 # afkit
 
-**Ship more code, of better quality, with almost nothing left to do yourself.** afkit is a free plugin that turns your AI coding agents into a reliable, near-autonomous dev team. Install it in a few clicks, on any app.
+afkit is a Cursor plugin for the product chain: from a clear coding request to verified production that keeps itself healthy. It is the product layer of a larger system (foundations, then this chain, then a company of agents that feed requests in).
 
 ## Why
 
 AI coding agents are fast, but you can't trust them: they say "done" without checking, and you end up reviewing everything.
 
-afkit fixes that. The agent thinks before it codes, tests the change itself on the running app in real conditions, and shows you the proof. After the deploy, it watches production and fixes what breaks. You decide and merge. You ship faster, with fewer bugs, and a process you can trust.
+The chain closes that. The agent thinks before it codes, tests the change on the running app, and shows the proof. You review and merge. Only what changed deploys. Then radar checks production and fixes what breaks.
 
 ```mermaid
 flowchart TB
@@ -34,21 +34,6 @@ Every skill follows the same rules: **keep it simple, question everything, delet
 
 **Cursor.** Open Customize, paste `https://github.com/romeohc/afkit` in the plugin search, then install.
 
-**Claude Code.**
-
-```text
-/plugin marketplace add romeohc/afkit
-/plugin install afkit@afkit
-```
-
-**Codex.**
-
-```text
-codex plugin marketplace add romeohc/afkit
-```
-
-Then install `afkit` from `/plugins`.
-
 ## Quickstart
 
 On your app, run `/setup`. It reads the repo and writes:
@@ -72,12 +57,6 @@ Then pick a skill for each task.
 | `/clean` | Read-only. Runs several agents in parallel on a path to find what to delete or simplify, then implements only the PR you pick. |
 | `/setup` | Installs the app's workflow pieces: `radar`, path-based deploys and the post-merge automation. |
 | `radar` | Written by `/setup` for each app. After a merge, checks deploys, CI, logs and the live URL. Replies `✅` when all is green, fixes a clear failure, and uses `/debug` when the cause is unknown. |
-
-## In progress
-
-- **`local`**: `/hard` and `/debug` expect a `local` skill that explains how to start and reach the app. `/setup` will write it.
-- **`/clean` at night**: clean and simplify the codebase on a schedule, verify with `/hard`, and open a pull request.
-- **Automatic PR review**: review engineering and security, check that the proof matches the request, then merge.
 
 ## Credits
 
