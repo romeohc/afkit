@@ -1,9 +1,0 @@
-{
-  "name": "afkit",
-  "version": "1.0.0",
-  "description": "Turns your AI coding agents into a near-autonomous team that ships better code, faster.",
-  "author": {
-    "name": "romeohc"
-  },
-  "icon": "./assets/logo.png"
-}
